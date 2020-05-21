@@ -1,24 +1,25 @@
-<div class="nav mobile">
+<div class="nav">
     <h3 class="nav-title">Menu</h3>
     <a href="#" class="nav-close">
         <span class="hidden">Close</span>
     </a>
     <ul>
-        {{#foreach navigation}}
-        <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} elusive-icon {{label}}" role="presentation"><a
-                href="{{url absolute="true"}}">{{label}}</a></li>
-        {{/foreach}}
+        <li class="nav-home" role="presentation"><a href="https://sejoon.kim/">Home</a></li>
+        <li class="nav-about" role="presentation"><a href="https://sejoon.kim/about/">About</a></li>
+        <li class="nav-python" role="presentation"><a href="https://sejoon.kim/tag/web/">Web</a></li>
+        <li class="nav-django" role="presentation"><a href="https://sejoon.kim/tag/django/">Django</a></li>
+        <li class="nav-java" role="presentation"><a href="https://sejoon.kim/tag/java/">Java</a></li>
+        <li class="nav-mysql" role="presentation"><a href="https://sejoon.kim/tag/mysql/">MySQL</a></li>
+        <li class="nav-postgresql" role="presentation"><a href="https://sejoon.kim/tag/postgresql/">PostgreSQL</a></li>
+        <li class="nav-docker nav-current" role="presentation"><a href="https://sejoon.kim/tag/docker/">Docker</a></li>
+        <li class="nav-linux" role="presentation"><a href="https://sejoon.kim/tag/linux/">Linux</a></li>
+        <li class="nav-git" role="presentation"><a href="https://sejoon.kim/tag/git/">Git</a></li>
+        <li class="nav-ruby-on-rails" role="presentation"><a href="https://sejoon.kim/tag/ruby-on-rails/">Ruby on
+                Rails</a></li>
+        <li class="nav-html" role="presentation"><a href="https://sejoon.kim/tag/html/">HTML</a></li>
+        <li class="nav-study" role="presentation"><a href="https://sejoon.kim/tag/study/">Study</a></li>
+        <li class="nav-etc" role="presentation"><a href="https://sejoon.kim/tag/etc/">Etc</a></li>
     </ul>
-    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+    <a class="subscribe-button icon-feed" href="https://sejoon.kim/rss/">Subscribe</a>
 </div>
-<span class="nav-cover mobile"></span>
-
-<div class="nav-desktop">
-    <ul class="sidebar-nav">
-        {{#foreach navigation}}
-        <li class="nav-desktop" role="presentation">
-            <a href="{{url absolute="true"}}" class="elusive-icon {{label}}">{{label}}</a>
-        </li>
-        {{/foreach}}
-    </ul>
-</div>
+<span class="nav-cover"></span>
